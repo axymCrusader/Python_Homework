@@ -1,6 +1,7 @@
 #1. Welcome to Python
-name = "Dmitry Shchegolev"
-print(f"Hello {name}! You just delved into Python. Great start!")
+
+Name = "Dmitry Shchegolev"
+print(f"Hello {Name}! You just delved into Python. Great start!")
 
 #2. Python art
 thickness = 5
@@ -26,12 +27,9 @@ for i in range(thickness+1):
 for i in range(thickness):
     print(((c*(thickness-i-1)).rjust(thickness) + c + (c*(thickness-i-1)).ljust(thickness)).rjust(thickness*6))  
 
-
-
 #3. Заголовок
 text = "hello world"
 print(text.title())
-
 
 #4. Форматированный вывод денежной суммы
 amount = 100500.157
