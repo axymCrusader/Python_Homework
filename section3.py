@@ -1,4 +1,3 @@
-
 #1. Welcome to Python
 name = "Dmitry Shchegolev"
 print(f"Hello {name}! You just delved into Python. Great start!")
