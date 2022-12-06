@@ -27,8 +27,6 @@ def polindrom(string):
     if string == reverse_string:
         return True
     return False
-
-
 """
 Дано: список студентов: каждый элемент списка содержит фамилию, имя, отчество, год рождения, курс, номер группы, оценки по пяти предметам.
 
@@ -38,13 +36,15 @@ def polindrom(string):
 2) находит средний балл каждой группы по каждому предмету;
 3) определяет самого старшего студента и самого младшего студентов.
 4) возвращает словарь, где для каждой группы определен лучшый с точки зрения успеваемости студент.
-
 """
+def get_student_list(dekan_list):
 
+    return 0
 
 
 value = 12
 print(value, "Результат: ",Calc_natural_numbers(value))
 
-text = "loh"
+text = "lok"
 print(text, "Результат: ",polindrom(text))
+
