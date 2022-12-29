@@ -18,24 +18,15 @@ def exponentiation(list_X, list_Y):
     return exp_list
 
 #5. Ленивая функция
-def lazy_function(n):
-    list = []
-    for x in range(n):
-        if x == 0:
-            list.append(-10)
-        elif x % 3 == 0:
-            list.append(45)
-        elif x % 5 == 0:
-            list.append(x / 5 + 93)
-        else:
-            list.append(x / 2)
-    return list 
+def lazy_function(N):
+    return 0
 
 numers = [39.2, 36.5, 37.3, 37.8]
 strings = ['Tina', 'Raj', 'Tom']
 X = [2, 3, 4]
 Y = [10, 11, 12]
 N = 3
+
 print(numers,"Результат:",convert_to_fahrenheit(numers))
 print(strings,"Результат:",get_len_strings(strings))
 print(f"X = {X}, Y = {Y}, Результат: {exponentiation(X,Y)}")
