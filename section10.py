@@ -8,7 +8,7 @@ def get_len_strings(text):
 
 #3. Рефакторинг.
 def get_d():
-    return 0
+    return len([1 for sentence in sentences if 'капитан' in sentence])
 
 #4. Возведение в степень.
 def exponentiation(list_X, list_Y):
@@ -18,8 +18,16 @@ def exponentiation(list_X, list_Y):
     return exp_list
 
 #5. Ленивая функция
-def lazy_function(N):
-    return 0
+def lazy_function(n):
+    for x in range(n + 1):
+        if x == 0:
+            yield -10
+        elif x % 3:
+            yield 45
+        elif x % 5:
+            yield x / 5 + 93
+        else:
+            yield x / 2
 
 numers = [39.2, 36.5, 37.3, 37.8]
 strings = ['Tina', 'Raj', 'Tom']
@@ -30,4 +38,4 @@ N = 3
 print(numers,"Результат:",convert_to_fahrenheit(numers))
 print(strings,"Результат:",get_len_strings(strings))
 print(f"X = {X}, Y = {Y}, Результат: {exponentiation(X,Y)}")
-print(N,"Результат:",lazy_function(N))
+print(N,"Результат:",list(lazy_function(N)))
